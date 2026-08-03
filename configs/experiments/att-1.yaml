@@ -1,6 +1,6 @@
 # Overrides applied on top of configs/base.yaml
 output_dir: "/local/janccoce/WGANProject/Att-1"
-batch_size: 32
+batch_size: 8
 num_epochs: 32
 log_interval: 300
 save_epoch: 1

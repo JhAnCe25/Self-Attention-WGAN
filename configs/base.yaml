@@ -1,0 +1,33 @@
+# Shared defaults. Experiment configs in configs/experiments/*.yaml override
+# only the keys that differ (e.g. output_dir, batch_size).
+
+# ── Paths ─────────────────────────────────────────────────────────────────
+data_root: "/local/janccoce/WGANProject/dataV6norm/"
+output_dir: "/local/janccoce/WGANProject/Att-1"
+
+# ── Data ──────────────────────────────────────────────────────────────────
+image_key: "datatmp"
+channels_img: 2
+crop_size: 128
+train_frac: 0.8
+
+# ── Training hyperparameters ────────────────────────────────────────────
+batch_size: 8
+noise_channels: 2
+noise_height: 16
+noise_width: 16
+num_epochs: 32
+lr: 0.0001
+beta1: 0.0
+beta2: 0.9
+num_workers: 4
+
+# ── WGAN-GP specific ─────────────────────────────────────────────────────
+n_critic: 5
+lambda_gp: 10
+
+# ── Logging & checkpointing ──────────────────────────────────────────────
+sample_size: 2
+log_interval: 50
+save_epoch: 8
+resume_training: true

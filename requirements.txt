@@ -1,0 +1,14 @@
+# For RTX 5090 / Blackwell GPUs, install torch/torchvision from the cu128 index first:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# then install the rest of this file.
+torch>=2.7
+torchvision
+numpy
+scipy
+pillow
+joblib
+datasets
+matplotlib
+tqdm
+pyyaml
+pytest
